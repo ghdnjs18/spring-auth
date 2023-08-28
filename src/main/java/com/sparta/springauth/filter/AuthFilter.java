@@ -8,13 +8,12 @@ import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.annotation.Order;
-import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.io.IOException;
 
 @Slf4j(topic = "AuthFilter")
-@Component
+//@Component // security에 걸리 수 있어 주석
 @Order(2)
 public class AuthFilter implements Filter {
 

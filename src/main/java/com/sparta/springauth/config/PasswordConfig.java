@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@Configuration // Bean Container에 저장한다.
+@Configuration // 수동으로 Bean Container에 저장한다.
 public class PasswordConfig {
 
     @Bean // Bean으로 등록 한다
